@@ -1,25 +1,31 @@
+/* ========================= */
+/* CONFIGURAÇÕES GERAIS */
+/* ========================= */
+
 body {
   background-color: #f4f4f4;
   color: #333333;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
   color: #2a7ae2;
 }
-/* 1. Aspectos gerais */
-body {
-  width: 960px;              /* tamanho fixo da página */
-  margin: 0 auto;            /* centraliza a página */
-  font-family: Arial, Helvetica, sans-serif; /* fonte sans-serif */
-}
 
 p {
-  text-indent: 1em;          /* indentação dos parágrafos */
+  text-indent: 1em;
 }
 
-/* 2. Títulos */
+/* ========================= */
+/* ATIVIDADE – ESTILIZAÇÃO TEXTUAL */
+/* ========================= */
+
+/* Títulos */
 h1, h2, h3 {
-  text-align: center;        /* pode trocar para right se quiser */
+  text-align: center;
 }
 
 h1 {
@@ -34,32 +40,26 @@ h3 {
   font-size: 1.2rem;
 }
 
-/* 3. Seção de resumo */
+/* Seção de resumo */
 .summary {
-  text-align: center;        /* pode usar right também */
+  text-align: center;
 }
 
-/* 3b. Seção principal */
+/* Seção principal */
 .main p {
-  line-height: 1.5;          /* espaçamento entre linhas */
+  line-height: 1.5;
 }
 
-/* 4. Abreviaturas */
+/* Abreviaturas */
 abbr {
   font-variant: small-caps;
 }
+
 /* ========================= */
 /* ATIVIDADE – BOX MODEL */
 /* ========================= */
 
-/* 1. Diretivas gerais */
-body {
-  width: 80%;
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-/* Seção de introdução */
+/* Introdução */
 .intro {
   height: 550px;
 }
@@ -69,7 +69,7 @@ body {
   display: none;
 }
 
-/* 2. Cabeçalho */
+/* Cabeçalho */
 header {
   background-color: #222;
   color: #f4f4f4;
@@ -87,7 +87,7 @@ header h1 {
   padding-left: 1em;
 }
 
-/* 3. Menus laterais */
+/* Menus laterais */
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -98,7 +98,7 @@ header h1 {
   text-align: center;
 }
 
-/* 4. Rodapé */
+/* Rodapé */
 footer {
   background-color: #222;
   color: #f4f4f4;
@@ -114,14 +114,17 @@ footer a {
   color: #f4f4f4;
   text-decoration: none;
 }
-/* ===== ATIVIDADE – POSICIONAMENTO ===== */
 
-/* 1. .page-wrapper como referência */
+/* ========================= */
+/* ATIVIDADE – POSICIONAMENTO */
+/* ========================= */
+
+/* Referência de posicionamento */
 .page-wrapper {
   position: relative;
 }
 
-/* 2. Painel explanation */
+/* Painel explanation */
 .explanation {
   width: 60%;
   margin-right: 35%;
@@ -129,38 +132,38 @@ footer a {
   padding-right: 2%;
 }
 
-/* 3. Menu de designs à direita */
+/* Menu de designs */
 .design-selection {
   position: absolute;
-  top: 560px;   /* após a introdução */
-  left: 62%;   /* após o explanation */
+  top: 560px;
+  left: 62%;
   padding: 0 2%;
 }
+
 /* ========================= */
 /* ATIVIDADE – FLEXBOX */
 /* ========================= */
 
-/* 1. Rodapé da seção principal */
+/* Rodapé da seção principal */
 .main footer {
   display: flex;
   justify-content: center;
   gap: 1em;
-  flex-wrap: wrap; /* trata quebra de linha */
+  flex-wrap: wrap;
 }
 
 .main footer a {
-  width: 120px;          /* mesmo tamanho para os links */
+  width: 120px;
   text-align: center;
 }
 
-/* 2. Seção de benefícios */
+/* Seção de benefícios */
 .benefits {
   display: flex;
   border-top: 1px solid #ccc;
-  border-bottom: none;
 }
 
-.benefits .text {
+.benefits p {
   width: 70%;
 }
 
@@ -168,17 +171,16 @@ footer a {
   width: 30%;
   display: flex;
   justify-content: center;
-  align-items: center; /* centraliza verticalmente */
+  align-items: center;
 }
 
-/* 3. Seção de participação */
+/* Seção de participação */
 .participation {
   display: flex;
-  border-top: none;
   border-bottom: 1px solid #ccc;
 }
 
-.participation .text,
+.participation p,
 .participation h3 {
   width: 50%;
 }
@@ -186,8 +188,5 @@ footer a {
 .participation h3 {
   display: flex;
   justify-content: center;
-  align-items: center; /* centraliza verticalmente */
+  align-items: center;
 }
-
-
-
