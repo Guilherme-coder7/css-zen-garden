@@ -6,3 +6,45 @@ body {
 a {
   color: #2a7ae2;
 }
+/* 1. Aspectos gerais */
+body {
+  width: 960px;              /* tamanho fixo da página */
+  margin: 0 auto;            /* centraliza a página */
+  font-family: Arial, Helvetica, sans-serif; /* fonte sans-serif */
+}
+
+p {
+  text-indent: 1em;          /* indentação dos parágrafos */
+}
+
+/* 2. Títulos */
+h1, h2, h3 {
+  text-align: center;        /* pode trocar para right se quiser */
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+/* 3. Seção de resumo */
+.summary {
+  text-align: center;        /* pode usar right também */
+}
+
+/* 3b. Seção principal */
+.main p {
+  line-height: 1.5;          /* espaçamento entre linhas */
+}
+
+/* 4. Abreviaturas */
+abbr {
+  font-variant: small-caps;
+}
