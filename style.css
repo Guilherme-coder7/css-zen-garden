@@ -136,5 +136,58 @@ footer a {
   left: 62%;   /* após o explanation */
   padding: 0 2%;
 }
+/* ========================= */
+/* ATIVIDADE – FLEXBOX */
+/* ========================= */
+
+/* 1. Rodapé da seção principal */
+.main footer {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap; /* trata quebra de linha */
+}
+
+.main footer a {
+  width: 120px;          /* mesmo tamanho para os links */
+  text-align: center;
+}
+
+/* 2. Seção de benefícios */
+.benefits {
+  display: flex;
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.benefits .text {
+  width: 70%;
+}
+
+.benefits h3 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* centraliza verticalmente */
+}
+
+/* 3. Seção de participação */
+.participation {
+  display: flex;
+  border-top: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.participation .text,
+.participation h3 {
+  width: 50%;
+}
+
+.participation h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* centraliza verticalmente */
+}
+
 
 
