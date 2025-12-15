@@ -190,3 +190,37 @@ footer a {
   justify-content: center;
   align-items: center;
 }
+/* ========================= */
+/* ATIVIDADE – PSEUDO-CLASSES */
+/* ========================= */
+
+/* 1. Links */
+a {
+  font-weight: bold;          /* negrito por padrão */
+}
+
+a:visited {
+  font-weight: normal;        /* links visitados não ficam em negrito */
+}
+
+a:hover {
+  color: #1a5bb8;             /* tom mais escuro no hover */
+}
+
+/* 2. Primeira letra do primeiro parágrafo da seção principal */
+.main p:first-of-type::first-letter {
+  font-size: 3em;             /* 3x maior */
+  font-family: "Times New Roman", serif; /* fonte diferente */
+  float: left;                /* flutua à esquerda */
+  margin-right: 0.2em;
+}
+
+/* 3. Menu de design */
+.design-selection li {
+  border-top: 1px solid #ccc; /* borda superior em todos */
+}
+
+.design-selection li:last-child {
+  border-bottom: 1px solid #ccc; /* borda inferior só no último */
+}
+
