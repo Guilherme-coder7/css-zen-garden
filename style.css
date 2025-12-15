@@ -48,3 +48,70 @@ h3 {
 abbr {
   font-variant: small-caps;
 }
+/* ========================= */
+/* ATIVIDADE – BOX MODEL */
+/* ========================= */
+
+/* 1. Diretivas gerais */
+body {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Seção de introdução */
+.intro {
+  height: 550px;
+}
+
+/* Remove design archives */
+#design-archives {
+  display: none;
+}
+
+/* 2. Cabeçalho */
+header {
+  background-color: #222;
+  color: #f4f4f4;
+  padding: 1em;
+}
+
+header h1,
+header h2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header h1 {
+  margin-right: 1em;
+  padding-left: 1em;
+}
+
+/* 3. Menus laterais */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* 4. Rodapé */
+footer {
+  background-color: #222;
+  color: #f4f4f4;
+  margin: 4%;
+  padding: 1em;
+}
+
+footer a {
+  display: inline-block;
+  border: 2px solid #f4f4f4;
+  padding: 0.5em;
+  margin: 0.2em;
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
