@@ -114,4 +114,27 @@ footer a {
   color: #f4f4f4;
   text-decoration: none;
 }
+/* ===== ATIVIDADE – POSICIONAMENTO ===== */
+
+/* 1. .page-wrapper como referência */
+.page-wrapper {
+  position: relative;
+}
+
+/* 2. Painel explanation */
+.explanation {
+  width: 60%;
+  margin-right: 35%;
+  border-right: 1px solid #1f295c;
+  padding-right: 2%;
+}
+
+/* 3. Menu de designs à direita */
+.design-selection {
+  position: absolute;
+  top: 560px;   /* após a introdução */
+  left: 62%;   /* após o explanation */
+  padding: 0 2%;
+}
+
 
